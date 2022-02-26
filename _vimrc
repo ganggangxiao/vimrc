@@ -72,8 +72,3 @@ set tabstop=4
 "打只能开缩进，且缩进默认4格
 set autoindent
 set inde=4
-
-"制表符使用空格表示
-set expandtab
-
-
