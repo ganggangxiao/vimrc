@@ -71,3 +71,5 @@ set tabstop=4
 set autoindent
 set inde=4
 
+"设置主题为所谓“晚上”
+colorscheme evening
