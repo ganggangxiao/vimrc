@@ -52,13 +52,11 @@ endfunction
 set enc=utf-8
 set fencs=utf-8,gb18030,gbk,gb2312,cp936,ucs-bom,shift-jis
 
-
 "Windows避免菜单栏乱码
 if(has("win32") || has("win95") || has("win64") || has("win7") || has("win10"))
     source $VIMRUNTIME/delmenu.vim
     source $VIMRUNTIME/menu.vim
 endif
-
 
 "显示行号
 set number
@@ -72,3 +70,4 @@ set tabstop=4
 "打开智能缩进，且缩进默认4格
 set autoindent
 set inde=4
+
