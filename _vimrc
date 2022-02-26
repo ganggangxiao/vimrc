@@ -69,6 +69,6 @@ syntax on
 "tab默认4格
 set tabstop=4
 
-"打只能开缩进，且缩进默认4格
+"打开智能缩进，且缩进默认4格
 set autoindent
 set inde=4
