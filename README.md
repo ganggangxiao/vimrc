@@ -7,3 +7,4 @@ Linux：
 用户 vimrc 文件: "$HOME/.vimrc"  
 Windows："$VIM/_vimrc
 忘记了可以:version查看
+Linux下把下载来的文件名改为.vimrc或vimrc
