@@ -3,8 +3,9 @@
 " Vim with all enhancements 启用Vim增强功能
 source $VIMRUNTIME/vimrc_example.vim
 
-" Remap a few keys for Windows behavior 映射Windows的一些快捷键,诸如C+C复制
-source $VIMRUNTIME/mswin.vim
+" 这里没有映射那些Windows的快捷键，所以Ctrl S不是保存 Ctrl C不是复制，
+" Ctrl V是默认的块选择
+" 不要图Windows下快捷键的便利反而丢失了Ctrl V（块选择）这么好的Vim快捷键
 
 " Mouse behavior (the Windows way) 采用Windows鼠标行为
 behave mswin
@@ -58,6 +59,7 @@ if(has("win32") || has("win95") || has("win64") || has("win7") || has("win10"))
     source $VIMRUNTIME/menu.vim
 endif
 
+
 "显示行号
 set number
 
@@ -71,5 +73,6 @@ set tabstop=4
 set autoindent
 set inde=4
 
-"设置主题为所谓“晚上”
-colorscheme evening
+"设置主题为所谓“白天”
+colorscheme morning
+
