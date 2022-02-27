@@ -4,6 +4,9 @@
 source $VIMRUNTIME/vimrc_example.vim
 
 " 这里没有映射那些Windows的快捷键，所以Ctrl S不是保存 Ctrl C不是复制，
+" 但是可以单独设置一个Control S保存
+imap <C-s> <Esc>:wa<cr>i<Right>
+nmap <C-s> :wa<cr>
 
 " Mouse behavior (the Windows way) 采用Windows鼠标行为
 behave mswin
@@ -106,7 +109,28 @@ set ruler
 "在遍历文件时识别括号的起始和结束位置
 set showmatch
 
+"默认搜索忽略大小写
+set ignorecase
 "搜索忽略大小写，但当搜索包含大写字母时就只查看大写
 set smartcase
+
+"在底部永久显示文件名，光标行/列，这个2表示开启
+set laststatus=2
+
+"英文拼写检查，以防变量、注释使用的单词拼写
+"我更喜欢英式英语的拼写,但是没有英式,那我就慢慢适应美式拼写吧...
+"这个c j k是忽略中文，为了避免拼写检查标红，我注释分开来写
+set spell
+set spelllang=en_us,cjk
+
+"打开备份文件，交换文件和撤销历史记录，避免误修改造成的数据丢失
+set backup
+set swapfile
+set undofile
+
+"打开声音警报，关闭视觉警告
+set errorbells
+set novisualbell
+
 
 
