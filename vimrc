@@ -1,11 +1,9 @@
-" windows和linux皆可用
+" System Windows/Vim
 " vim version 8.2
 " Vim with all enhancements 启用Vim增强功能
 source $VIMRUNTIME/vimrc_example.vim
 
 " 这里没有映射那些Windows的快捷键，所以Ctrl S不是保存 Ctrl C不是复制，
-" Ctrl V是默认的块选择
-" 不要图Windows下快捷键的便利反而丢失了Ctrl V（块选择）这么好的Vim快捷键
 
 " Mouse behavior (the Windows way) 采用Windows鼠标行为
 behave mswin
@@ -75,4 +73,5 @@ set inde=4
 
 "设置主题为所谓“白天”
 colorscheme morning
+
 
