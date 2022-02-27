@@ -74,4 +74,7 @@ set inde=4
 "设置主题为所谓“白天”
 colorscheme morning
 
+"设置不自动换行
+set nowrap
+
 
