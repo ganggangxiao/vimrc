@@ -67,14 +67,46 @@ syntax on
 "tab默认4格
 set tabstop=4
 
-"打开智能缩进，且缩进默认4格
+"打开自动对齐缩进，且缩进默认4格空格长度，然后智能缩进
 set autoindent
 set inde=4
+set smartindent
 
 "设置主题为所谓“白天”
 colorscheme morning
 
 "设置不自动换行
 set nowrap
+
+"设置可以从行首或行尾移动到另一行
+set whichwrap=b,s,<,>,[,]
+
+"显示制表符且将指标符显示为'>---',行尾空格显示为' '
+set list
+set listchars=tab:>-,trail:-
+
+"自动设置目录为正在编辑的文件所在的目录
+set autochdir
+
+"高亮显示搜索结果
+set hlsearch
+
+"智能搜索
+set incsearch
+
+"替换时所有行内匹配都被替换，而不是那一个
+set gdefault
+
+"打开文件，光标默认在首行
+set scrolloff=0
+
+"编辑时，右下角显示光标所在
+set ruler
+
+"在遍历文件时识别括号的起始和结束位置
+set showmatch
+
+"搜索忽略大小写，但当搜索包含大写字母时就只查看大写
+set smartcase
 
 
